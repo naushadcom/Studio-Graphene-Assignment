@@ -21,7 +21,10 @@ function Products() {
     <div>
       {data.map((item) => (
         <div key={item.id}>
-		<img src={item.category.image} style={{height:"20px",width:"20px"}} />
+          <img
+            src={item.category.image}
+            style={{ height: "200px", width: "200px" }}
+          />
           {/* <h1 >{item.title}</h1>
           <h1>{item.price}</h1>
           <h1>{item.category.name}</h1> */}
