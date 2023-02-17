@@ -1,0 +1,41 @@
+.tnav-l {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.shopkart {
+  font-size: 40px;
+  /* font-family: "poppins"; */
+  font-family: sans-serif;
+  font-weight: 275px;
+  color: rgba(255, 255, 255, 1);
+}
+.tnav-r{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 45px;
+}
+.tnav-r>p{
+	margin-left: 10px;
+	/* font-family: 'Work Sans'; */
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 400px;
+	color: rgba(255, 255, 255, 1);
+}
+.bnav{
+	width: 83%;
+	margin: auto;
+}
+.bnav>ul{
+	display: flex;
+	
+}
+.bnav>ul>p{
+	color: rgba(255, 255, 255, 1);
+	font-size: 18px;
+	font-weight: 400px;
+	margin-left:6%;
+	cursor: pointer;
+}

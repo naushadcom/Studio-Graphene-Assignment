@@ -1,0 +1,105 @@
+.box {
+  margin: auto;
+  width: 70%;
+  display: flex;
+}
+.box-1 {
+  width: 50%;
+}
+.fresh {
+  font-weight: 800;
+  font-size: 135px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: -40%;
+  font-family: "Syne";
+  letter-spacing: 3px;
+}
+.num {
+  font-weight: 800;
+  font-size: 135px;
+  -webkit-text-stroke: 1px rgb(254, 251, 251);
+  -webkit-text-fill-color: transparent;
+  margin-top: -18%;
+  margin-left: 18%;
+  font-family: "Syne";
+  letter-spacing: 3px;
+}
+.look {
+  font-weight: 800;
+  font-size: 135px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: -33%;
+  font-family: "Syne";
+  margin-top: -25%;
+  letter-spacing: 3px;
+}
+.orangebox {
+  position: absolute;
+  background-color: rgba(240, 126, 21, 1);
+  width: 1100px;
+  height: 354.3px;
+  opacity: 0.5;
+  margin-left: 415px;
+  top: 350px;
+}
+.image {
+  position: absolute;
+  width: 432px;
+  height: 650.95px;
+  left: 899px;
+  top: 128.05px;
+  /* border: 1px solid red; */
+}
+.org {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #161615;
+  position: absolute;
+  width: 117px;
+  height: 16.2px;
+  left: 1300px;
+  top: 614.9px;
+  text-transform: uppercase;
+}
+.pri {
+  position: absolute;
+  width: 31px;
+  height: 16.2px;
+  left: 1300px;
+  top: 634.13px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.line {
+  position: absolute;
+  width: 976px;
+  height: 0px;
+  left: 0px;
+  top: 665.51px;
+
+  border: 1px solid #ffffff;
+}
+.see {
+  position: absolute;
+  width: 103px;
+  height: 25px;
+  border: 1px solid #ffffff;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  left: 14%;
+  top: 685.51px;
+  color: #ffffff;
+  display: flex;
+}
+.img{
+  position: absolute;
+  top: 692px;
+  left: 19%;
+  height: 15px;
+}
