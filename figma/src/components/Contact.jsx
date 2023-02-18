@@ -21,6 +21,7 @@ function Contact() {
   useEffect(() => {
     console.log(formError);
     if (Object.keys(formError).length === 0 && isSubmit) {
+      alert("Form data is successfully sent.")
       console.log(formvalues);
     }
   }, [formError]);
@@ -29,15 +30,15 @@ function Contact() {
     const regex =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!values.name) {
-      errors.name = "Name in required";
+      errors.name = "Name in required !";
     }
     if (!values.email) {
-      errors.email = "Email in required";
+      errors.email = "Email in required !";
     } else if (!regex.test(values.email)) {
-      errors.email = "This is not a valid email format";
+      errors.email = "This is not a valid email format !";
     }
     if (!values.message) {
-      errors.message = "Message in required";
+      errors.message = "Message in required !";
     }
     return errors;
   };
@@ -62,9 +63,6 @@ function Contact() {
             </p>
           </div>
           <div className="big-c-12">
-            {/* <div>
-            {Object.keys(formError).length === 0 && isSubmit ? (<div>Form data submitted success fully</div>):()}
-          </div> */}
             <form onSubmit={handleSubmit} className="form" action="">
               <input
                 className="input"
@@ -74,7 +72,7 @@ function Contact() {
                 value={formvalues.name}
                 onChange={handleChange}
               />
-              <p>{formError.name}</p>
+              <p className="errorshow">{formError.name}</p>
 
               <br />
               <input
@@ -85,7 +83,7 @@ function Contact() {
                 value={formvalues.email}
                 onChange={handleChange}
               />
-              <p>{formError.email}</p>
+              <p className="errorshow">{formError.email}</p>
 
               <br />
               <input
@@ -96,7 +94,7 @@ function Contact() {
                 value={formvalues.message}
                 onChange={handleChange}
               />
-              <p>{formError.message}</p>
+              <p className="errorshow">{formError.message}</p>
               <div>
                 <button className="send">SEND</button>
               </div>

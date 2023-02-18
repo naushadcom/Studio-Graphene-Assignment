@@ -2,15 +2,18 @@
   margin: auto;
   width: 70%;
   display: flex;
+  /* border: 1px solid red; */
 }
 .box-1 {
   width: 50%;
+  /* border: 1px solid red; */
+  padding-top: 70px;
 }
 .fresh {
   font-weight: 800;
   font-size: 135px;
   color: rgba(255, 255, 255, 1);
-  margin-left: -40%;
+  text-align: left;
   font-family: "Syne";
   letter-spacing: 3px;
 }
@@ -19,7 +22,7 @@
   font-size: 135px;
   -webkit-text-stroke: 1px rgb(254, 251, 251);
   -webkit-text-fill-color: transparent;
-  margin-top: -18%;
+  margin-top: -7%;
   margin-left: 18%;
   font-family: "Syne";
   letter-spacing: 3px;
@@ -30,25 +33,43 @@
   color: rgba(255, 255, 255, 1);
   margin-left: -33%;
   font-family: "Syne";
-  margin-top: -25%;
+  margin-top: -10%;
   letter-spacing: 3px;
 }
 .orangebox {
   position: absolute;
   background-color: rgba(240, 126, 21, 1);
   width: 1100px;
-  height: 354.3px;
+  height: 384.3px;
   opacity: 0.5;
   margin-left: 415px;
-  top: 350px;
+  top: 280px;
 }
-.image {
+.box-2 {
+  /* border: 1px solid rgb(18, 235, 43); */
+  width: 50%;
+}
+.image-1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 367px;
+  height: 371.51px;
+  left: 955px;
+  top: 95px;
+}
+.image-2 {
   position: absolute;
   width: 432px;
   height: 650.95px;
-  left: 899px;
-  top: 128.05px;
-  /* border: 1px solid red; */
+  left: 850px;
+  top: 100px;
+}
+.image-3{
+  position: absolute;
+width: 64px;
+height: 89.08px;
+left:885px;
+top: 591px;
 }
 .org {
   font-family: "Work Sans";
@@ -58,17 +79,16 @@
   position: absolute;
   width: 117px;
   height: 16.2px;
-  left: 1300px;
-  top: 614.9px;
+  left: 1250px;
+  top: 580px;
   text-transform: uppercase;
 }
 .pri {
   position: absolute;
   width: 31px;
   height: 16.2px;
-  left: 1300px;
-  top: 634.13px;
-
+  left: 1250px;
+  top: 600px;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
@@ -76,16 +96,16 @@
 }
 .line {
   position: absolute;
-  width: 976px;
+  width: 920px;
   height: 0px;
   left: 0px;
-  top: 665.51px;
-
+  top: 635.51px;
   border: 1px solid #ffffff;
 }
 .see {
+  cursor: pointer;
   position: absolute;
-  width: 103px;
+  width: 95px;
   height: 25px;
   border: 1px solid #ffffff;
   flex: none;
@@ -97,7 +117,7 @@
   color: #ffffff;
   display: flex;
 }
-.img{
+.img {
   position: absolute;
   top: 692px;
   left: 19%;

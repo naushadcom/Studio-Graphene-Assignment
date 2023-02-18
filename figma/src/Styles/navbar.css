@@ -6,36 +6,52 @@
 }
 .shopkart {
   font-size: 40px;
-  /* font-family: "poppins"; */
   font-family: sans-serif;
   font-weight: 275px;
   color: rgba(255, 255, 255, 1);
 }
-.tnav-r{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 45px;
+.tnav-r {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
 }
-.tnav-r>p{
-	margin-left: 10px;
-	/* font-family: 'Work Sans'; */
-	font-family: sans-serif;
-	font-size: 14px;
-	font-weight: 400px;
-	color: rgba(255, 255, 255, 1);
+.tnav-r > p {
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  color: rgba(255, 255, 255, 1);
 }
-.bnav{
-	width: 83%;
-	margin: auto;
+.uline {
+  margin: auto;
+  height: 2px;
+  border: 1px solid white;
+  margin-top: -22px;
+  width: 75%;
+  color: white;
 }
-.bnav>ul{
-	display: flex;
-	
+.smallstar {
+  box-sizing: border-box;
+  position: absolute;
+  width: 21.14px;
+  height: 22px;
+  left: 482px;
+  top: 44px;
+  /* background: #ffffff; */
+  /* border: 1px solid #ffffff; */
 }
-.bnav>ul>p{
-	color: rgba(255, 255, 255, 1);
-	font-size: 18px;
-	font-weight: 400px;
-	margin-left:6%;
-	cursor: pointer;
+.bnav {
+  width: 83%;
+  margin: auto;
+  margin-top: 10px;
+}
+.bnav > ul {
+  display: flex;
+}
+.bnav > ul > p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 400px;
+  margin-left: 6%;
+  cursor: pointer;
 }

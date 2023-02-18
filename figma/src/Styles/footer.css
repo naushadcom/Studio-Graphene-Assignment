@@ -1,12 +1,12 @@
 .footer {
   background: #000000;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
-.foot{
-	border: 1px solid rgb(2, 2, 2);
-	height: 66px;
-	width: 75%;
-	margin: auto;
+.foot {
+  border: 1px solid rgb(2, 2, 2);
+  height: 66px;
+  width: 75%;
+  margin: auto;
 }
 .copy {
   font-family: "Poppins";
@@ -16,4 +16,6 @@
   color: #ffffff;
   text-align: center;
   margin-top: 28px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
 }

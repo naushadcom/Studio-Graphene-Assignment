@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/navbar.css";
-import { Link } from "react-scroll";
+import { Button, Link } from "react-scroll";
+import startwo from "../images/startwo.svg"
 
 function Navbar() {
   return (
@@ -12,7 +13,8 @@ function Navbar() {
           <p>BAG</p>
         </div>
       </div>
-      <hr style={{ width: "75%", margin: "auto", marginTop: "-37px" }} />
+      <div className="uline" ></div>
+      <img className="smallstar" src={startwo} alt="" />
 
       <div className="bnav">
         <ul>
@@ -28,13 +30,25 @@ function Navbar() {
           </p>
           <p>
             <Link to="" smooth={true} duration={500}>
-			  <select style={{backgroundColor:"black",outline:"none",color: "rgba(255, 255, 255, 1)",fontSize:"18px",outline:"1px solid black"}} name="" id="">
-				<option value="">OUR PRODUCTS</option>
-				<option value="">Product 1</option>
-				<option value="">Product 2</option>
-				<option value="">Product 3</option>
-				<option value="">Product 4</option>
-			  </select>
+              <select
+                style={{
+                  backgroundColor: "black",
+                  outline: "none",
+                  color: "rgba(255, 255, 255, 1)",
+                  fontSize: "18px",
+                  outline: "0px solid black",
+                  border:"none",
+                  borderBottom:"1px solid white"
+                }}
+                name=""
+                id=""
+              >
+                <option value="">OUR PRODUCTS</option>
+                <option value="">Product 1</option>
+                <option value="">Product 2</option>
+                <option value="">Product 3</option>
+                <option value="">Product 4</option>
+              </select>
             </Link>
           </p>
           <p>
