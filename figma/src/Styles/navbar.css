@@ -1,4 +1,4 @@
-.tnav-l {
+/* .tnav-l {
   width: 75%;
   margin: auto;
   display: flex;
@@ -29,6 +29,7 @@
   margin-top: -22px;
   width: 75%;
   color: white;
+  background-color: white;
 }
 .smallstar {
   box-sizing: border-box;
@@ -36,7 +37,7 @@
   width: 21.14px;
   height: 22px;
   left: 482px;
-  top: 44px;
+  top: 86px;
 }
 .bnav {
   width: 83%;
@@ -52,4 +53,110 @@
   font-weight: 400px;
   margin-left: 6%;
   cursor: pointer;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --mainColor: black;
+  --mainColorLight: black;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  /* background: transparent; */
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.shopkart {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 275px;
+  color: rgba(255, 255, 255, 1);
+}
+.uline {
+  margin: auto;
+  height: 2px;
+  border: 1px solid white;
+  margin-top: -22px;
+  width: 75%;
+  color: white;
+  background-color: white;
+}
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
 }

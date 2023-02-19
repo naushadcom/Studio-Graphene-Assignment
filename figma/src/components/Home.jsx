@@ -12,7 +12,6 @@ function Home() {
       style={{
         backgroundColor: "black",
         marginTop: "-20px",
-        // border: "1px solid red",
         height:"646px"
       }}
     >
@@ -31,7 +30,7 @@ function Home() {
       <p className="org">OREGON JACKET</p>
       <p className="pri">$124</p>
       <div className="line"></div>
-      <img className="image-3" src={starone} alt="" />
+      <img className="image-3" src={starone} alt="Hello" />
       <div className="see">
         <div className="seemore">See more</div>
       </div>

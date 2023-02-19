@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Topnav from "./components/Topnav";
+import Nav from "./components/Nav";
 
 function App() {
   return (
