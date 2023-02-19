@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/navbar.css";
 import { Button, Link } from "react-scroll";
-import startwo from "../images/startwo.svg"
+import startwo from "../images/startwo.svg";
 
 function Navbar() {
   return (
@@ -13,7 +13,7 @@ function Navbar() {
           <p>BAG</p>
         </div>
       </div>
-      <div className="uline" ></div>
+      <div className="uline"></div>
       <img className="smallstar" src={startwo} alt="" />
 
       <div className="bnav">
@@ -37,8 +37,8 @@ function Navbar() {
                   color: "rgba(255, 255, 255, 1)",
                   fontSize: "18px",
                   outline: "0px solid black",
-                  border:"none",
-                  borderBottom:"1px solid white"
+                  border: "none",
+                  borderBottom: "1px solid white",
                 }}
                 name=""
                 id=""

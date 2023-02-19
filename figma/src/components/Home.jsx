@@ -13,7 +13,7 @@ function Home() {
         backgroundColor: "black",
         marginTop: "-20px",
         // border: "1px solid red",
-        height:"635px"
+        height:"646px"
       }}
     >
       <div className="box">

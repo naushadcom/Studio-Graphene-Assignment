@@ -4,10 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../Styles/products.css";
+import axios from "axios";
 
 function Products() {
-  const [suggestions, setSuggestions] = useState([]);
+  const [data, setData] = useState([]);
+  const [category]=useState([])
 
+  // fetch data .......................................
   useEffect(() => {
     fetch("https://api.escuelajs.co/api/v1/products")
       .then((res) => {
@@ -15,12 +18,31 @@ function Products() {
       })
       .then((jsonData) => {
         console.log(jsonData);
-        setSuggestions(jsonData);
+        setData(jsonData);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [setData]);
+
+  // Filter by Category................................
+
+  let Shoes = data.filter((el) => {
+    return el.category.name === "Shoes";
+  });
+  let Furniture = data.filter((el) => {
+    return el.category.name === "Furniture";
+  });
+
+  let Clothes = data.filter((el) => {
+    return el.category.name === "Clothes";
+  });
+  let Electronics = data.filter((el) => {
+    return el.category.name === "Electronics";
+  });
+  let Others = data.filter((el) => {
+    return el.category.name === "Others";
+  });
 
   let settings = {
     infinite: false,
@@ -46,16 +68,37 @@ function Products() {
       },
     ],
   };
+
+  const handleFilter = (e) => {
+    axios
+      .get(
+        `https://api.escuelajs.co/api/v1/products/category/name/${e.target.value}`
+      )
+      .then((res) => {
+        setData(res.data);
+      });
+  };
+
   return (
     <div className="productpage">
       <div className="newproducts">New products</div>
       <div className="underline"></div>
       <div className="displaydata">
-        <div className="category"></div>
+        <div className="category">
+          <p onClick={handleFilter} value="Shoes">
+            Shoes
+          </p>
+          <p onClick={handleFilter} value="Furniture">
+            Furniture
+          </p>
+          <p onClick={() => setData(Clothes)}>Clothes</p>
+          <p onClick={() => setData(Electronics)}>Electronics</p>
+          <p onClick={() => setData(Others)}>Others</p>
+        </div>
         <div className="apidata">
-          <div >
+          <div>
             <Slider {...settings}>
-              {suggestions.map((current) => (
+              {data.map((current) => (
                 <div key={current.id}>
                   <div className="display-data">
                     <img className="api-image" src={current.category.image} />

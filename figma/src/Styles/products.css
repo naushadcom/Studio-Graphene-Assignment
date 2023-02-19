@@ -22,17 +22,26 @@
   border: 1px solid #161615;
 }
 .displaydata {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   height: 630px;
 }
 .category {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 20%;
   margin-top: 40px;
 }
+.category > p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  cursor: pointer;
+}
 .apidata {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 80%;
   margin-top: 40px;
 }
@@ -40,7 +49,6 @@
   width: 250px;
   height: 322px;
   /* width: fit-content; */
-  
 }
 .pd-name {
   font-family: "Syne";
@@ -70,8 +78,6 @@
   flex-grow: 0;
   text-align: left;
 }
-.display-data{
+.display-data {
   margin-right: 25px;
 }
-
-
