@@ -1,12 +1,15 @@
+.mainbox {
+  background-color: black;
+  height: 655px;
+}
 .box {
   margin: auto;
   width: 70%;
+  height: 100%;
   display: flex;
-  /* border: 1px solid red; */
 }
 .box-1 {
   width: 50%;
-  /* border: 1px solid red; */
   padding-top: 70px;
 }
 .fresh {
@@ -18,58 +21,60 @@
   letter-spacing: 3px;
 }
 .num {
+  position: absolute;
   font-weight: 800;
   font-size: 135px;
   -webkit-text-stroke: 1px rgb(254, 251, 251);
   -webkit-text-fill-color: transparent;
-  margin-top: -7%;
-  margin-left: 18%;
+  margin-top: -2%;
+  margin-left: 12%;
   font-family: "Syne";
   letter-spacing: 3px;
 }
 .look {
+  position: absolute;
   font-weight: 800;
   font-size: 135px;
   color: rgba(255, 255, 255, 1);
-  margin-left: -33%;
+  margin-left: 2%;
   font-family: "Syne";
-  margin-top: -10%;
+  margin-top: 5%;
   letter-spacing: 3px;
 }
 .orangebox {
   position: absolute;
   background-color: rgba(240, 126, 21, 1);
-  width: 1100px;
+  width: 72%;
   height: 384.3px;
   opacity: 0.5;
-  margin-left: 415px;
-  top: 280px;
+  margin-left: 27.8%;
+  margin-top: -32%;
 }
 .box-2 {
   /* border: 1px solid rgb(18, 235, 43); */
+
   width: 50%;
 }
 .image-1 {
-  box-sizing: border-box;
   position: absolute;
   width: 367px;
   height: 371.51px;
-  left: 955px;
-  top: 95px;
+  /* border: 1px solid red; */
+  left: 61.5%;
 }
 .image-2 {
   position: absolute;
   width: 432px;
   height: 650.95px;
-  left: 850px;
-  top: 100px;
+  /* border: 1px solid red; */
+  left: 55%;
 }
-.image-3{
+.image-3 {
   position: absolute;
-width: 64px;
-height: 89.08px;
-left:885px;
-top: 591px;
+  width: 64px;
+  height: 89.08px;
+  left: 885px;
+  top: 591px;
 }
 .org {
   font-family: "Work Sans";
@@ -122,4 +127,55 @@ top: 591px;
   top: 692px;
   left: 19%;
   height: 15px;
+}
+
+@media all and (max-width: 391px) {
+  .mainbox {
+    width: 950px;
+  }
+  .image-1 {
+    margin-left: 85%;
+  }
+  .image-2 {
+    margin-left: 70%;
+  }
+  .fresh {
+    margin-left: 20%;
+    margin-top: 30%;
+    font-size: 100px;
+  }
+  .num {
+    margin-left: 50%;
+    font-size: 100px;
+  }
+  .look {
+    margin-left: 20%;
+    font-size: 100px;
+    margin-top: 20%;
+  }
+  .line{
+    width: 560px;
+  }
+  .image-3{
+    position: absolute;
+  width: 64px;
+  height: 89.08px;
+  left: 535px;
+  top: 591px;
+  }
+  .orangebox{
+    position: absolute;
+  background-color: rgba(240, 126, 21, 1);
+  width: 950px;
+  height: 354.3px;
+  opacity: 0.5;
+  margin-left: 0%;
+  margin-top:-120%;
+  }
+  .see{
+    margin-left: 40%;
+  }
+  .img{
+    margin-left: 55%;
+  }
 }

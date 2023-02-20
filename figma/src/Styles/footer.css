@@ -19,3 +19,14 @@
   word-spacing: 5px;
   letter-spacing: 2px;
 }
+@media all and (max-width: 391px) {
+  .footer {
+    width: 950px;
+    /* border: 1px solid red; */
+  }
+  .copy {
+    word-spacing: 0px;
+    letter-spacing: 2px;
+  }
+  
+}

@@ -21,7 +21,7 @@ function Contact() {
   useEffect(() => {
     console.log(formError);
     if (Object.keys(formError).length === 0 && isSubmit) {
-      alert("Form data is successfully sent.")
+      alert("Form data is successfully sent.");
       console.log(formvalues);
     }
   }, [formError]);
@@ -48,17 +48,7 @@ function Contact() {
         <div className="big-c-1">
           <div className="big-c-11">
             <p className="p-1">Newslleter</p>
-            <p
-              className="p-2"
-              style={{
-                fontFamily: "Work Sans",
-                color: "rgba(255, 255, 255, 0.5)",
-                fontSize: "18px",
-                fontW: "400",
-                lineHeight: "21px",
-                textAlign: "left",
-              }}
-            >
+            <p className="p-2">
               Get news about articles and updates <br /> in your inbox
             </p>
           </div>

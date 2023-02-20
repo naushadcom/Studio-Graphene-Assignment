@@ -1,3 +1,6 @@
+.topcontainer {
+  background-color: #1a1a1a;
+}
 .one {
   width: 75%;
   margin: auto;
@@ -7,12 +10,12 @@
   justify-content: space-between;
 }
 .two {
-  border: 1px soldi red;
+  /* border: 1px soldi red; */
   display: flex;
   margin-top: 10px;
 }
 .three {
-  border: 1px soldi red;
+  /* border: 1px soldi red; */
   display: flex;
   margin-top: 10px;
 }
@@ -30,6 +33,13 @@
   margin-left: 20px;
   height: 70%;
 }
-.socialimg{
-	height: 10px;
+.socialimg {
+  height: 10px;
+}
+
+@media all and (max-width: 391px) {
+  .topcontainer {
+    width: 950px;
+    /* border: 1px solid red; */
+  }
 }

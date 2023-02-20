@@ -69,18 +69,34 @@ function Navbar() {
   };
 
   return (
-    <div style={{ backgroundColor: "black" }}>
-      <header
-        style={{ backgroundColor: "black", width: "75%", margin: "auto" }}
-      >
+    <div className="navbody">
+      <header style={{ backgroundColor: "black" }}>
         <p className="shopkart">ShopKart</p>
-        <div className="uline"></div>
+        {/* <hr style={{color:"white"}} /> */}
+        {/* <div className="uline"></div> */}
         <nav ref={navRef}>
-        <h3>Shop Cart</h3>
-          <a href="/#">Home</a>
-          <a href="/#">My work</a>
-          <a href="/#">Blog</a>
-          <a href="/#">About me</a>
+          <a href="/#">HOME</a>
+          <a href="/#">ABOUT</a>
+          <a href="/#">
+            <select
+              style={{
+                backgroundColor: "black",
+                color: "white",
+                outline: "none",
+                border: "none",
+                borderBottom: "1px solid white",
+              }}
+              name=""
+              id=""
+            >
+              <option value="">OUR PRODUCTS</option>
+              <option value="">PRODUCT 1</option>
+              <option value="">PRODUCT 2</option>
+              <option value="">PRODUCT 3</option>
+              <option value="">PRODUCT 4</option>
+            </select>
+          </a>
+          <a href="/#">CONTACT US</a>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>
