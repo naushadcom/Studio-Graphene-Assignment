@@ -44,7 +44,7 @@
   font-weight: 600;
   text-align: left;
 }
-.p-2{
+.p-2 {
   font-family: "Work Sans";
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
@@ -103,7 +103,7 @@ input {
   .big-c-2 {
     font-size: 90px;
     line-height: 100px;
-    letter-spacing: 15px;
+    /* letter-spacing: 15px; */
   }
   .big-c-1 {
     height: 50%;
@@ -113,16 +113,24 @@ input {
   }
   .big-c-11 {
     margin: auto;
+    width: 100%;
     /* border: 1px solid red; */
   }
   .p-1 {
     text-align: center;
+    font-size: 50px;
+    /* border: 1px solid red; */
   }
   .p-2 {
     text-align: center;
+    font-size: 25px;
     /* border: 1px solid red; */
   }
-  .big-c-12{
+  .big-c-12 {
     margin: auto;
+  }
+  .big-c-12 {
+    width: 100%;
+    /* border: 1px solid red; */
   }
 }

@@ -23,7 +23,7 @@ function Products() {
         return res.json();
       })
       .then((jsonData) => {
-        // console.log(jsonData);
+        console.log(jsonData);
         setData(jsonData);
       })
       .catch((err) => {
@@ -84,10 +84,10 @@ function Products() {
           <p onClick={() => handleFilter("Clothes")} name="Clothes">
             Clothes
           </p>
-          <p onClick={() => handleFilter("Electronics")} name="Electronics">
+          <p onClick={() => handleFilter("Electronicos")} name="Electronics">
             Electronics
           </p>
-          <p onClick={() => handleFilter("Others")} name="Others">
+          <p onClick={() => handleFilter("inimputable")} name="Others">
             Others
           </p>
         </div>
