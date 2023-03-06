@@ -1,3 +1,7 @@
+@font-face{
+  font-family: Imported;
+  src:url(../font/Syne-ExtraBold.ttf)
+}
 .mainbox {
   background-color: black;
   height: 655px;
@@ -17,7 +21,7 @@
   font-size: 135px;
   color: rgba(255, 255, 255, 1);
   text-align: left;
-  font-family: "Syne";
+  font-family: Imported;
   letter-spacing: 3px;
 }
 .num {
@@ -153,29 +157,29 @@
     font-size: 100px;
     margin-top: 20%;
   }
-  .line{
+  .line {
     width: 560px;
   }
-  .image-3{
+  .image-3 {
     position: absolute;
-  width: 64px;
-  height: 89.08px;
-  left: 535px;
-  top: 591px;
+    width: 64px;
+    height: 89.08px;
+    left: 535px;
+    top: 591px;
   }
-  .orangebox{
+  .orangebox {
     position: absolute;
-  background-color: rgba(240, 126, 21, 1);
-  width: 950px;
-  height: 354.3px;
-  opacity: 0.5;
-  margin-left: 0%;
-  margin-top:-120%;
+    background-color: rgba(240, 126, 21, 1);
+    width: 950px;
+    height: 354.3px;
+    opacity: 0.5;
+    margin-left: 0%;
+    margin-top: -120%;
   }
-  .see{
+  .see {
     margin-left: 40%;
   }
-  .img{
+  .img {
     margin-left: 55%;
   }
 }
